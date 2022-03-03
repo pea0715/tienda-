@@ -1,40 +1,128 @@
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #app {
-    background: url("./imagene/fondo.jpeg");
-     background-size: cover;
-     width: 100%;
-     height:100vh;
-
+  background: url("./imagene/fondo.jpeg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
-#app::before{
-    content: "";
-    background: rgba(0,0, 0, 0.5);
-    bottom: 0;
-    right: 0;
-    top: 0;
-    left: 0;
-    position: absolute;
+#app::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  right: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
 }
 #header {
-    padding:25px;
-    position:relative;
-    right: 0px;
-
+  padding: 25px;
+  position: relative;
+  right: 0px;
 }
 
-.nav-menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-    display: flex;
-
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+  display: flex;
 }
-.nav-menu >ul > li{
-    margin-left: 10px;
-    margin-right:10px;
+.nav-menu > ul > li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-menu a:hover {
+  color: rgb(255, 0, 0);
+}
+#titulo {
+  margin-top: 30vh;
+  position: relative;
+}
+
+#titulo h1 #titulo h2 {
+  color: white;
+}
+
+h1 {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 20px;
+}
+
+#nosotros,
+#Objetivos {
+  margin: 3% 6% 0px 5%;
+}
+.nav-menu {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+#registro {
+  padding-top: 10px;
+  background: black;
+  color: white;
+  font-size: 16px;
+}
+
+.flecha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+
+.mi-flecha {
+  width: 2vw;
+  height: 2vh;
+  border: 0.5vw solid;
+  border-color: red transparent transparent red;
+  transform: rotate(-135deg);
+}
+
+.flecah-invertida {
+  position: absolute;
+  animation: slide 4s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-4vw);
+  }
+  20% {
+    opocity: 1;
+    transform: translateY(-1vw);
+  }
+  40% {
+    opocity: 0;
+    transform: translateY(1vw);
+  }
+  60% {
+    opocity: 1;
+    transform: translateY(4vw);
+  }
+  80% {
+    opacity: 1;
+    transform: translateY(-4vw);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1vw);
+  }
 }
